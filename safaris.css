@@ -1,0 +1,431 @@
+styles2.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b2a4a4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #5cb85c; /* Green */
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #4cae4c;
+}
+
+.enquire-btn {
+    background-color: #d9534f; /* Red */
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.enquire-btn:hover {
+    background-color: #c9302c;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    padding: 20px 0;
+}
+
+.section.active {
+    display: block;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('adventure.jpg'); 
+    background-size: cover;
+    color:black;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#home a:hover {
+    background-color: #0056b3;
+}
+
+#destinations h2,
+#trips h2,
+#about-us h2,
+#contact h2 {
+    color: #5cb85c;
+    margin-bottom: 15px;
+}
+
+.country-section {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.country-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.destination-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.destination-card p {
+    padding: 10px;
+    margin: 0;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.trip-label {
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 5px;
+}
+
+.trip-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.trip-details {
+    color: #777;
+}
+
+#about-us strong {
+    color: #5cb85c;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.footer {
+      background-color: #f2f2f2;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 1px solid #ccc;
+}
+
+.footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+}
+
+.footer-content p {
+      margin: 10px 0;
+      color: #333;
+}
+
+.social-icons {
+      margin: 10px 0;
+}
+
+.social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+}
+
+.social-icons img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+ }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+ }
+
+ .copyright {
+      font-size: 14px;
+      color: #666;
+      margin-top: 15px;
+}
+/* Enquiry Form Styles */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-popup h2 {
+    color: #5cb85c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-popup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-popup input[type=text],
+.form-popup input[type=email],
+.form-popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-popup button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-popup button:hover {
+    background-color: #0056b3;
+}
+
+.form-popup button[type="button"] {
+    background-color: #d9534f;
+}
+
+.form-popup button[type="button"]:hover {
+    background-color: #c9302c;
+}
+
+/* Questionnaire Styles */
+.questionnaire {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questionnaire h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questionnaire .step {
+    margin-bottom: 15px;
+    display: none;
+}
+
+.questionnaire .step.active {
+    display: block;
+}
+
+.questionnaire label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.questionnaire input[type="text"],
+.questionnaire input[type="email"],
+.questionnaire input[type="number"],
+.questionnaire input[type="date"],
+.questionnaire select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.questionnaire button#nextBtn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.questionnaire button#nextBtn:hover {
+    background-color: #4cae4c;
+}
+/* video Styles */
+#videoSection {
+text-align: center;
+padding: 50px 20px;
+background-color: #f5f5f5; /* Light
+background */
+}
+#videoSection h2 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+#videoSection video {
+max-width: 100%;
+height: auto;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0, 0, 0,
+0.2);
+}
+/* Trips Styles */
+.destination {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .destination h3 {
+            cursor: pointer;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .destination h3:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .details {
+            display: none; /* Initially hidden */
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
+        }
+        .details p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .details strong {
+            color: #555;
+        }
